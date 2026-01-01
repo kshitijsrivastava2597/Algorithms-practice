@@ -1,6 +1,6 @@
 import csv
 record = []
-with open("C:/Users/kssrivas/Desktop/New folder/Python_practice/Introduction to Algorithms/Lec-1_students.csv",'r',encoding='utf-8') as file:
+with open("Lec-1_students.csv",'r',encoding='utf-8') as file:
     students = csv.reader(file)
     for row in students:
         record.append(row)
@@ -17,3 +17,4 @@ def Birthday_match(record):
     return None
 result = Birthday_match(record)
 print(result)
+
